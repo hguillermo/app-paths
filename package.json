@@ -1,0 +1,18 @@
+{
+  "name": "app-paths",
+  "version": "0.0.1",
+  "description": "Just a basic module to get the base path to the lib, config or other paths for a typical node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "require",
+    "base",
+    "path",
+    "lib",
+    "config"
+  ],
+  "author": "Harry Guillermo",
+  "license": "ISC"
+}
