@@ -10,8 +10,25 @@ console.log(basePaths.pathTo('lib')); // APP_PATH/lib
 
 # methods
 
+To start using it require the module:
+
 ```js
 var basePaths = require('app-paths')();
+
+console.log(basePaths.base()); // APP_PATH/
+
+```
+Or you can pass some options:
+
+```js
+var options = {
+    views: 'path/to/views',
+    routes: 'path/to/routes'
+}
+var basePaths = require('app-paths')(options);
+
+console.log(basePaths.pathTo('routes')); // APP_PATH/path/to/routes
+
 ```
 
 ## pathTo(dir)
@@ -37,7 +54,7 @@ app
   - config
   - node_modules
   - index.js
-  
+
 var basePaths = require('app-paths')();
 console.log(basePaths.base());           // /path/to/app/
 console.log(basePaths.pathTo('lib'));    // /path/to/app/lib
