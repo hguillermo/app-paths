@@ -1,5 +1,3 @@
-# TODO: Still on dev
-
 # app-paths
 
 It helps to get the path relative to the root of the node app.
@@ -9,6 +7,10 @@ var basePaths = require('app-paths')();
 
 console.log(basePaths.pathTo('lib')); // APP_PATH/lib
 ```
+
+# IMPORTANT
+
+This module only works when you have a node_modules directory in the root of your node application.
 
 # Methods
 
