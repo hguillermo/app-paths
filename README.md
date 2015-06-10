@@ -8,7 +8,7 @@ var basePaths = require('app-paths')();
 console.log(basePaths.pathTo('lib')); // APP_PATH/lib
 ```
 
-# IMPORTANT
+#### IMPORTANT
 
 This module only works when you have a node_modules directory in the root of your node application.
 
