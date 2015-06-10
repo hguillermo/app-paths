@@ -92,7 +92,7 @@ console.log(basePaths.pathTo('views'));  // /path/to/app/path/to/my/views
 console.log(basePaths.pathTo('routes')); // /path/to/app/path/to/my/routes
 ```
 
-fromRoot or _ example:
+.fromRoot(filepath) or ._(filepath) example:
 
 ```
 app
