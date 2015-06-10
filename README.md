@@ -48,6 +48,10 @@ It returns the path to the config path.
 
 It returns the path to the directory (dir) passed as a parameter relative to the node application.
 
+## fromRoot(filepath) or _(filepath)
+
+It returns the application root path plus the filepath. Useful when you are requiring a module.
+
 Basic example:
 ```
 app
@@ -86,6 +90,21 @@ console.log(basePaths.pathTo('a/b/c'));  // /path/to/app/a/b/c
 
 console.log(basePaths.pathTo('views'));  // /path/to/app/path/to/my/views
 console.log(basePaths.pathTo('routes')); // /path/to/app/path/to/my/routes
+```
+
+fromRoot or _ example:
+
+```
+app
+  - lib
+  - config
+  - node_modules
+  - index.js
+
+var paths = require('app-paths')();
+
+console.log(paths.fromRoot('/my/path/to/models/user'));  // /path/to/app/my/path/to/models/user
+console.log(paths._('/my/path/to/models/user'));         // /path/to/app/my/path/to/models/user
 ```
 
 # Install
