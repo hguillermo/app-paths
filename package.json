@@ -1,6 +1,6 @@
 {
   "name": "app-paths",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Just a basic module to get the base path to the lib, config or other paths for a typical node app",
   "main": "lib/index.js",
   "scripts": {
@@ -16,6 +16,6 @@
   "author": "Harry Guillermo",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^3.9.3"
+    "lodash": "3.9.3"
   }
 }
